@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Repair Cost Calculator</h1>
+        <p>base price 1m = 1000$</p>
+    </header>
+    <main>
+        <div>
+            <h2>apartment area</h2>
+            <input type="number" id="square-input" min="0" max="200" value="50"><span>m2</span> 
+            <input type="range" id="square-range" class="square-range"min="0" max="200" value="50" step="1" >
+        </div>
+        <div>
+        <h2>type repair</h2>
+<input type="radio" id="cosmetic" name="type" value="1">
+<label for="cosmetic">cosmetic</label><br>
+<input type="radio" id="capital" name="type" value="1.3">
+<label for="capital">capital</label><br>
+<input type="radio" id="full-construction" name="type" value="1.5">
+<label for="full-construction">full construction</label>
+</div>
+<div>
+    <h2>house type</h2>
+<input type="radio" class="radio" name="building" value="1.3">
+<label for="cosmetic">new building</label><br>
+<input type="radio" class="radio" name="building" value="1.1">
+<label for="capital">old building</label><br>
+</div>
+<div>
+    <h1>number of rooms</h1>
+    <label class="rooms-label">
+    <input class="rooms-radio-real" type="radio" name="rooms" value="0.8" >
+    <span class="rooms-radio-fake">1</span></label>
+    <label class="rooms-label">
+    <input class="rooms-radio-real" type="radio" name="rooms" value="1.1">
+    <span class="rooms-radio-fake">2</span></label>
+    <label class="rooms-label">
+    <input class="rooms-radio-real" type="radio" name="rooms" value="1.2">
+    <span class="rooms-radio-fake">3</span></label>
+    <label class="rooms-label">
+    <input class="rooms-radio-real" type="radio" name="rooms" value="1.3">
+    <span class="rooms-radio-fake">4</span></label>
+    <label class="rooms-label">
+    <input class="rooms-radio-real" type="radio" name="rooms" value="1.4">
+   <span class="rooms-radio-fake">5</span></label>
+</div>
+<div>
+    <h2>additional options</h2>
+    <input type="checkbox" class="radio"  name="ceiling" value="1.1">
+    <label for="stretch-ceiling">stretch ceiling</label><br>
+    <input type="checkbox" class="radio"  name="wall" value="1.2">
+    <label for="capital">wall painting</label><br>
+    <input type="checkbox" class="radio" name="floor" value="1.3">
+    <label for="full-construction">warm floor</label> 
+</div>
+<div>
+    <h2>repair cost:</h2>
+    <span id="totalPrice">0</span>
+</div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
